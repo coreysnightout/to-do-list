@@ -1,0 +1,26 @@
+.jumbotron {
+  text-align: center;
+  /*background-color: green;*/
+  height: 200px;
+  background: url(img/toDo.jpg) no-repeat, fixed;
+  /*max-width: 100%;*/
+  background-size: cover;
+}
+
+.blue {
+  background-color: rgba(183, 247, 255, 0.5);
+}
+
+body{
+background: url(img/paper.jpg) no-repeat center center fixed;
+background-size: cover;
+}
+
+.jumbotron h1 {
+font-family: monospace;
+font-size: 50px;
+}
+
+.btn{
+  margin-bottom: 20px;
+}
