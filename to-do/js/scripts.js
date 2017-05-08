@@ -5,8 +5,13 @@ $(document).ready(function() {
     var thingToDo =$("input#thing-to-do").val();
 
 
-    $("ul#where-things-go").append("<li>" + thingToDo + "</li>");
+    $("ul#where-things-go").append("<li><span class='clickme'>" + thingToDo + "</span></li>");
 
+    $(".clickme").last().click(function() {
+      debugger;
+      $("#completed-thing").append("<li>" + thingToDo + "</li>");
+
+    });
 
   });
 });
