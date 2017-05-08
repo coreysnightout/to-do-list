@@ -8,10 +8,20 @@ $(document).ready(function() {
     $("ul#where-things-go").append("<li><span class='clickme'>" + thingToDo + "</span></li>");
 
     $(".clickme").last().click(function() {
-      debugger;
       $("#completed-thing").append("<li>" + thingToDo + "</li>");
+      $(this).fadeOut();
+
+    //
+    // $("#completed-thing").last().click(function() {
+    //   $("#where-things-go").append("<li>" + thingToDo + "</li>");
+    //   $(this).fadeOut();
+    // })
 
     });
 
+    $(".reset").click(function(event) {
+      form.reset();
+
+    });
   });
 });
